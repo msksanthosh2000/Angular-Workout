@@ -1,27 +1,54 @@
-# MyAngularApp
+# Angular Todo Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+This repository contains an Angular application for managing a simple Todo list. The app includes features such as user login and logout, a welcome page, and a Todo listing page. It interacts with a backend service through a service layer, with built-in error handling and basic authentication.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Features](#features)-
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Running the Application](#running-the-application)
+- [Service Layer](#service-layer)
+- [Error Handling](#error-handling)
+- [Authentication](#authentication)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- User login and logout functionality
+- Welcome page with user greetings
+- Todo listing page for viewing, adding, and deleting todos
+- Service layer to interact with the backend API
+- Basic error handling for user interactions
+- Basic authentication for secure access
 
-## Build
+## Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Angular**: Framework for building the web application
+- **TypeScript**: Programming language for Angular development
+- **HTML/CSS**: Markup and styling for the application
+- **RxJS**: Library for handling asynchronous data
+- **Angular Router**: For routing between different views
 
-## Running unit tests
+## Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Prerequisites
 
-## Running end-to-end tests
+- Node.js (v12 or later)
+- Angular CLI
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Clone the Repository
 
-## Further help
+```bash
+git clone https://github.com/yourusername/angular-todo-app.git
+cd angular-todo-app
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Service Layer
+The application includes a service layer that handles HTTP requests to the backend. This layer manages all interactions with the backend API for todos, including creating, retrieving, updating, and deleting todos.
+
+### Error Handling
+The application implements error handling to manage failed API requests gracefully. Users will receive appropriate feedback for any issues that occur during interactions.
+
+### Authentication
+Basic authentication is implemented to secure the application. Users must log in to access the Todo listing page. Credentials are verified against the backend service.
