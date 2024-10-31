@@ -44,11 +44,11 @@ This repository contains an Angular application for managing a simple Todo list.
 git clone https://github.com/yourusername/angular-todo-app.git
 cd angular-todo-app
 
-### Service Layer
+**### Service Layer**
 The application includes a service layer that handles HTTP requests to the backend. This layer manages all interactions with the backend API for todos, including creating, retrieving, updating, and deleting todos.
 
-### Error Handling
+**### Error Handling**
 The application implements error handling to manage failed API requests gracefully. Users will receive appropriate feedback for any issues that occur during interactions.
 
-### Authentication
+**### Authentication**
 Basic authentication is implemented to secure the application. Users must log in to access the Todo listing page. Credentials are verified against the backend service.
